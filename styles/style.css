@@ -1,0 +1,142 @@
+body{
+    background-color: rgb(50, 46, 84);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+    justify-items: center;
+    align-content: center;
+}
+
+
+.contenedor{
+    border: solid black 3px;
+    border-radius: 1em;
+    width: 25em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3em 0 3em;
+    padding: 1em;
+    box-shadow: 10px 10px 10px;
+    background-color: white;
+}
+
+.titulo{
+    height: 3em;
+    display: flex;
+    align-items: center;
+}
+
+.medio{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.medioIzquierda{
+    border: solid black 1px;
+    width: 60%;
+    padding-left: 1em;
+
+}
+
+.imagen{
+    height: 8em;
+    width: 8em;
+    border: blue solid 4px;
+    width: 40%;
+}
+
+img{
+    height: 100%;
+    width: auto;
+}
+
+.botones{
+    /* border: solid red 1px; */
+    display: flex;
+    width: 100%;
+    margin: 0 1em 0 1em;
+    justify-content: space-around;
+    align-items: center;
+}
+input{
+    margin: 0 1em 0 1em;
+    height: 2.2em;
+}
+
+.info{
+    border: solid black 1px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    width: 390px;
+    margin-top: 2px;
+    border-radius: 10px;
+}
+
+.infoVerde{
+    color: green;
+}
+
+.infoRojo{
+    color: red;
+}
+
+.produccion{
+    background-color: rgb(192, 189, 216);
+    border: solid black 3px;
+    border-radius: 1em;
+    width: 85%;
+    height: 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#infoAlto, #infoBajo{
+    border: solid black 3px;
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+}
+
+.infoLoteAlto, .infoLoteBajo{
+    border: solid black 2px;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+#contenedorAlto, #contenedorBajo{
+    display: flex;
+}
+
+.loteCreado{
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 0.5em;
+}
+
+#lotesNuevos{
+    flex-direction: column;
+}
+
+#infoSinAnalizar{
+    display: flex;
+}
+
+.ajustar{
+    width: 100%;
+}

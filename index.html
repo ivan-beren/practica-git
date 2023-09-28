@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="contenedor">
+
+            <div class="titulo">
+                <h2>Pileta</h2>
+            </div>
+
+            <div class="medio">
+                <div class="medioIzquierda">
+                    <p>Contenido: <strong>Pescado</strong></p>
+                    <p>Capacidad Maxima: <strong>50000 Kg</strong></p>
+                    <p id="volumenActual">Volumen Actual: <strong>0 Kg</strong></p>
+                </div>
+                <div class="medioDerecha imagen">
+                    <img class="ajustar" src="/assets/Pileta.jpeg" alt="">
+                </div>
+            </div>
+    
+            <div class="botones">
+                <div>
+                    <button id="btn1">Agregar Pescado</button>
+                </div>
+                <div>
+                    <input type="text" placeholder="Cantidad a usar" id="input1">
+                </div>
+                <div>
+                    <button id="btn2"> Procesar y transferir</button>
+                </div>
+            </div>
+
+            <div class="info">
+                <p id="infoPileta" class="">Ingrese la cantidad de materia prima que ingresa a la pileta</p>
+            </div>
+    
+        </div>
+        <div class="contenedor">
+
+            <div class="titulo">
+                <h2>Cocinador</h2>
+            </div>
+    
+            <div class="medio">
+                <div class="medioIzquierda">
+                    <p>Capacidad Maxima: <Strong>2000 Kg</Strong></p>
+                    <p id="volumenCrudo">Volumen Crudo: <strong>0 Kg</strong></p>
+                    <p id="volumenCocinado">Volumen Cocinado: <strong>0 Kg</strong></p>
+                </div>
+                <div class="medioDerecha imagen">
+                    <img class="ajustar" src="/assets/Cocinador.JPG" alt="">
+                </div>
+            </div>
+    
+            <div class="botones">
+                <div>
+                    <button id="btnCocinar">Cocinar Pescado</button>
+                </div>
+                <div>
+                    <input type="text" placeholder="Cantidad a usar" id="inputCocinador">
+                </div>
+                <div>
+                    <button id="btnTransCocinado">Trasnferir Cocinado</button>
+                </div>
+            </div>
+            
+            <div class="info">
+                <p id="infoCocinador">Sin materia prima en Cocinador</p>
+            </div>
+    
+    
+        </div>
+        <div class="contenedor">
+
+            <div class="titulo">
+                <h2>Prensa</h2>
+            </div>
+    
+            <div class="medio">
+                <div class="medioIzquierda">
+                    <p>Capacidad Maxima: <Strong>2000 Kg</Strong></p>
+                    <p id="volumenCocinadoPrensa">Volumen Cocinado: <strong>0 Kg</strong></p>
+                    <p id="volumenPrensado">Volumen Prensado: <strong>0 Kg</strong></p>
+                </div>
+                <div class="medioDerecha imagen">
+                    <img class="ajustar" src="/assets/Prensa.JPG" alt="">
+                </div>
+            </div>
+    
+            <div class="botones">
+                <div>
+                    <button id="btnCocinado">Prensar Pescado</button>
+                </div>
+                <div>
+                    <input type="text" placeholder="Cantidad a usar" id="inputPrensa">
+                </div>
+                <div>
+                    <button id="btnTransPrensado">Transferir Prensado</button>
+                </div>
+            </div>
+            
+            <div class="info">
+                <p id="infoPrensa">Actualmente sin materia prima cocinada</p>
+            </div>
+    
+    
+        </div>
+        <div class="contenedor">
+
+            <div class="titulo">
+                <h2>Rotadisco</h2>
+            </div>
+    
+            <div class="medio">
+                <div class="medioIzquierda">
+                    <p>Capacidad Maxima: <strong>2000 Kg</strong></p>
+                    <p id="volumenPrensadoRtd">Volumen Prensado: <strong>0 Kg</strong></p>
+                    <p id="volumenHarinaRtd">Volumen Harina: <strong>0 Kg</strong></p>
+                </div>
+                <div class="medioDerecha imagen">
+                    <img class="ajustar" src="./assets/Rotadisco_o.jpg" alt="">
+                </div>
+            </div>
+    
+            <div class="botones">
+                <div>
+                    <button id="btnSecarHarina">Secar Harina</button>
+                </div>
+                <div>
+                    <input type="text" placeholder="Cantidad a usar" id="inputRtd">
+                </div>
+                <div>
+                    <button id="btnTransHarina">Transferir Harina</button>
+                </div>
+            </div>
+            
+            <div class="info">
+                <p id="infoRtd">Actualmente sin producto</p>
+            </div>
+    
+    
+        </div>
+        <div class="contenedor">
+
+            <div class="titulo">
+                <h2>Silo</h2>
+            </div>
+    
+            <div class="medio">
+                <div class="medioIzquierda">
+                    <p>Capacidad Maxima: <strong>25000 Kg</strong></p>
+                    <p id="volumenHarinaSilo">Volumen Harina: <strong>0 Kg</strong></p>
+                    <p id="cantidadBolsaSilo">Bolsas de 50 Kg: <strong>0</strong> </p>
+                </div>
+                <div class="medioDerecha imagen">
+                    <img class="ajustar" src="./assets/Silos.jpg" alt="">
+                </div>
+            </div>
+    
+            <div class="botones">
+                <div>
+                    <button id="btnBolsaSilo">Averiguar Bolsas</button>
+                </div>
+                <div>
+                    <input type="text" placeholder="Cantidad a usar" id="inputSilo">
+                </div>
+                <div>
+                    <button id="btnSacarBolsas">Sacar Bolsas</button>
+                </div>
+            </div>
+            
+            <div class="info">
+                <p id="infoSilo">Actualmente sin producto terminado</p>
+            </div>
+    
+    
+        </div>
+        <div class="contenedor">
+
+            <div class="titulo">
+                <h2>Lotes</h2>
+            </div>
+    
+            <div class="medio">
+                <div class="medioIzquierda">
+                    <p id="bolsasDisponibles">Bolsas Disponibles: <strong>0</strong> </p>
+                    <p id="pilasDisponibles">Cantidad de Lotes: <strong>0</strong></p>
+                </div>
+                <div class="medioDerecha imagen">
+                    <img class="ajustar" src="./assets/Lotes.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="botones">
+                <div>
+                    <button id="btnCrearLote">Crear Lotes</button>
+                </div>
+
+                <div>
+                    <button id="btnVerLote">Ver Lotes</button>
+                </div>
+            </div>
+
+            <div class="info">
+                <p id="infoLote">Lotes disponibles</p>
+            </div>
+    
+    
+        </div>
+    </div>
+
+    <div class="produccion" id="infoProduccion">
+        <div id="infoAlto">
+            <h4>Lotes con NBV mayor a 200ppm</h4>
+            <div id="contenedorAlto"></div>
+        </div>
+        <div id="infoBajo">
+            <h4>Lotes con NBV menor a 200ppm</h4>
+            <div id="contenedorBajo"></div>
+        </div>
+        <div id="lotesNuevos">
+            <h4>Lotes obtenidos de produccion</h4>
+            <h6>Sin control de calidad</h6>
+            <div id="infoSinAnalizar"></div>
+
+        </div>
+    </div>
+
+
+
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="/scripts/main.js" type="module"></script>
+
+</html>
