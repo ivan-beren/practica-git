@@ -4,6 +4,8 @@ let volumen = 0;
 //que en este caso sería el residuo de pescado, una vez que ingresa, se puede trasnferir
 //al cocinador para cocinar el mismo
 
+// Agust hizo este cambio
+
 //La pileta soporta 350000Kg de materia prima
 
 function textoExito(texto) {
