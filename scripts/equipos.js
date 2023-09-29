@@ -4,6 +4,17 @@ let volumen = 0;
 //que en este caso sería el residuo de pescado, una vez que ingresa, se puede trasnferir
 //al cocinador para cocinar el mismo
 
+let btnPileta = document.getElementById('btnPileta')
+
+
+function primerAlert () {
+  alert("Este alert marca el 1er cambio")
+}
+
+
+btnPileta.addEventListener("click", primerAlert);
+
+
 // Agust hizo este cambio
 
 //La pileta soporta 350000Kg de materia prima
