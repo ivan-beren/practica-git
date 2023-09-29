@@ -6,13 +6,20 @@ let volumen = 0;
 
 let btnPileta = document.getElementById('btnPileta')
 
-
 function primerAlert () {
   alert("Este alert marca el 1er cambio")
 }
 
-
 btnPileta.addEventListener("click", primerAlert);
+
+
+let btnCocinador = document.getElementById('btnCocinador')
+
+function segundoAlert (){
+  alert("Este alert corresponde al 2do cambio")
+}
+
+btnCocinador.addEventListener('click', segundoAlert)
 
 
 // Agust hizo este cambio
